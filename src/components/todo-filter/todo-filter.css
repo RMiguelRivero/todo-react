@@ -1,0 +1,23 @@
+.todo-filter--list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo-filter--list li {
+    border: solid 1px rgba(0, 0, 0, 0);
+    padding: 0.5rem;
+    cursor: default;
+}
+
+.todo-filter--list li:hover:not(.active) {
+    cursor: pointer;
+    border-bottom: dotted 1px #c1c1c1;
+}
+
+.todo-filter--list li.active {
+    border: solid 1px #c1c1c1;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+

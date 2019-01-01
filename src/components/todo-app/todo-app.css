@@ -1,0 +1,30 @@
+.todo-app {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* font-size: var(--font-size);
+    color: var(--primary-color); */
+
+    max-width: 600px;
+    padding-top: 2rem;
+  }
+
+  .todo-title{
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .todo-input {
+    margin: 0 0 1rem 0;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: solid 1px var(--grey-lighter-5);
+  }

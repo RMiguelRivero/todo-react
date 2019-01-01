@@ -1,28 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import AppHeader from './components/app-header/app-header';
+import AboutPage from './pages/about.page';
+import TodoAppPage from './pages/todo-app.page';
+import NotFoundPage from './pages/not-found';
 import './App.css';
 
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <Router>
+                <div>
+                    <AppHeader/>
+                    <main>
+                        <Switch>
+                            <Route path="/" exact component={TodoAppPage} />
+                            <Route path="/about" exact component={AboutPage} />
+                            <Route component={NotFoundPage} />
+                        </Switch>
+                    </main>
+                </div>
+            </Router>
+        );
+    }
 }
 
 export default App;

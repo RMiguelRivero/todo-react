@@ -1,0 +1,19 @@
+.todo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.text {
+    margin: 0 1rem;
+}
+
+.todo-completed {
+    color: var(--grey-lighter-5);
+}
+
+.todo-completed .text {
+    text-decoration: line-through;
+}

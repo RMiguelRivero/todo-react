@@ -1,0 +1,11 @@
+.not-found{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.not-found > p {
+  margin-bottom: 1rem;
+}
+.not-found > p.title{
+    font-size: 2rem;
+}
